@@ -1,0 +1,20 @@
+.form_wrapper{
+	margin:0 auto;
+	display:block;
+	float: left;
+}
+
+.cell{
+	vertical-align: top;
+	padding-top: 5px;
+	padding-right: 10px;
+}
+
+.cell_center_align{
+	text-align: center;
+}
+
+img{
+	max-width: 100px;
+	max-height: 100px;
+}
