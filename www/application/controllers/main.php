@@ -24,9 +24,8 @@ class Main extends CI_Controller{
 
 	public function delete(){
 		$bookId = $this->uri->segment(3);
-		$params = array();
-		$params['id'] = $bookId;
-		$this->db->delete('books', $params);
+		$this->load->model("books");
+		$this->books->delete($bookId);
 		redirect(base_url() . 'main', 'refresh');
 	}
 
@@ -45,14 +44,8 @@ class Main extends CI_Controller{
         	$fileData = $this->upload->data();
             $path =  dirname($this->config->base_url())."/". UPLOAD_DIR . $fileData["file_name"];
 
-            $params = array();
-	        $params['title']        = $this->input->post("title");
-	        $params['desc']         = $this->input->post("desc");
-	        $params['picture']      = $path;
-	        $params['download_url'] = $this->input->post("download_url");
-	        $params['process']      = $this->input->post("process");
-
-	        $this->db->insert("books", $params);
+	        $this->load->model("books");
+	        $this->books->insert($path);
 	        redirect(base_url() . 'main', 'refresh');
         }
         
