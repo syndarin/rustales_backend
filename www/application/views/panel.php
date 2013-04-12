@@ -11,7 +11,7 @@
 
 	<body>
 	<div class="container">
-		<a href="main/logoff"><p class="text-right">Завершить работу</p></a>
+		<a href="admin/logout"><p class="text-right">Завершить работу</p></a>
 	<div class="row">
 		
 		<div class="span5">

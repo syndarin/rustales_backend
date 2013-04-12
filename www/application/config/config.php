@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://rustales.local/index.php';
+$config['base_url']	= 'http://rustales.local/';
 
 /*
 |--------------------------------------------------------------------------

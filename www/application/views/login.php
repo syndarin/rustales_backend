@@ -8,9 +8,9 @@
 	</head>
 
 	<body>
-
 		<div class="container">
-			<form method="POST" action="main">
+			<form method="POST" action="admin">
+				<legend>Авторизация</legend>
 				<table>
 					<tr>
 						<td class="cell">Логин</td>
@@ -18,7 +18,7 @@
 					</tr>
 					<tr>
 						<td class="cell">Пароль</td>
-						<td><input type="text" size="15" name="password"/></td>
+						<td><input type="password" size="15" name="password"/></td>
 					</tr>
 					<tr>
 						<td colspan="2" class="cell_center_align"><button class="btn btn-primary">Войти</button></td>
